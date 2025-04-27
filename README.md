@@ -52,35 +52,6 @@ I built a C# .NET WinForms desktop app that performs **CRUD** operations on four
   - Create, update, delete records on each tab  
   - Validate empty-field checks and numeric conversions  
 
-## How to Run the Project
-
-### Prerequisites
-
-- Windows 10 or later  
-- .NET Framework 4.x (or .NET 5+ with WinForms)  
-- SQL Server instance  
-- Visual Studio 2019 or later  
-
-### Steps
-
-1. **Clone Repository**  
-   ```bash
-   git clone https://github.com/SergioFernizaMarquez/AirBnDB.git
-
-2. **Database Setup**
-- Create a database named DevelopmentAirBnDB.
-- Execute SQL scripts: create_tables.sql, create_stored_procedures.sql.
-
-3. **Configure Connection**
-- Update the connection string in DataAccessLayer.cs or move it to App.config.
-
-4. **Build & Run**
-- Open AirBnDBProject.sln in Visual Studio.
-- Press F5 to start or run the compiled .exe.
-
-5. **Use the Application**
-- Navigate tabs to manage Users, Hosts, Properties, and Bookings.
-
 ### Conclusion
 
 This project demonstrates a complete desktop CRUD solution. From schema design and stored procedure usage to data access abstraction and WinForms UI integration. It uses the best practices in separation of concerns, ensures robust data handling with ADO.NET, and uses an intuitive user interfaces.
