@@ -2,9 +2,13 @@
 
 My project is an **end to end** Windows Forms application for managing an AirBnB style rental system. It covers everything from database schema definition and stored procedure creation, to data-access layer implementation, WinForms UI design, CRUD wiring, and manual testing.
 
+---
+
 ## Overview
 
 I built a C# .NET WinForms desktop app that performs **CRUD** operations on four entities Users, Hosts, Properties, and Bookings backed by SQL Server. All database interactions use ADO.NET (`SqlDataAdapter`, `SqlCommandBuilder`) with stored procedures for consistency and security.
+
+---
 
 ## Database Design and Schema
 
@@ -20,6 +24,8 @@ I built a C# .NET WinForms desktop app that performs **CRUD** operations on four
 **Stored Procedures** for each table:  
 `sp_Read<Entity>`, `sp_Create<Entity>`, `sp_Update<Entity>`, `sp_Delete<Entity>`
 
+---
+
 ## Data Access Layer
 
 1. **Connection Setup** (`DataAccessLayer.cs`)  
@@ -30,6 +36,8 @@ I built a C# .NET WinForms desktop app that performs **CRUD** operations on four
 3. **AdapterManager** (`AdapterManager.cs`)  
    - Provides `SqlDataAdapter` instances per entity.  
    - Maps `SelectCommand` to `sp_Read<Entity>` and parameterized `Insert`/`Update`/`Delete` commands to the corresponding SPs.
+
+---
 
 ## UI Implementation
 
@@ -45,6 +53,8 @@ I built a C# .NET WinForms desktop app that performs **CRUD** operations on four
    - Button handlers: collect form inputs, invoke DAL methods, refresh UI  
    - Helper methods: `GenerateHostID()`, `SplitComboBoxValue()`, `CheckIfFieldsAreEmpty()`
 
+---
+
 ## Testing and Validation
 
 - Verified stored procedures in SQL Server Management Studio.  
@@ -52,6 +62,8 @@ I built a C# .NET WinForms desktop app that performs **CRUD** operations on four
   - Create, update, delete records on each tab  
   - Validate empty-field checks and numeric conversions  
 
-### Conclusion
+---
+
+## Conclusion
 
 This project demonstrates a complete desktop CRUD solution. From schema design and stored procedure usage to data access abstraction and WinForms UI integration. It uses the best practices in separation of concerns, ensures robust data handling with ADO.NET, and uses an intuitive user interfaces.
