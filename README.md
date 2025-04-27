@@ -1,10 +1,10 @@
 # AirDBnB Database Management App
 
-My project is an **end-to-end** Windows Forms application for managing an AirBnB-style rental system. It covers everything from database schema definition and stored-procedure creation, to data-access layer implementation, WinForms UI design, CRUD wiring, and manual testing.
+My project is an **end to end** Windows Forms application for managing an AirBnB style rental system. It covers everything from database schema definition and stored procedure creation, to data-access layer implementation, WinForms UI design, CRUD wiring, and manual testing.
 
 ## Overview
 
-I built a C# .NET WinForms desktop app that performs **CRUD** operations on four entities—Users, Hosts, Properties, and Bookings—backed by SQL Server. All database interactions use ADO.NET (`SqlDataAdapter`, `SqlCommandBuilder`) with stored procedures for consistency and security.
+I built a C# .NET WinForms desktop app that performs **CRUD** operations on four entities Users, Hosts, Properties, and Bookings backed by SQL Server. All database interactions use ADO.NET (`SqlDataAdapter`, `SqlCommandBuilder`) with stored procedures for consistency and security.
 
 ## Database Design and Schema
 
