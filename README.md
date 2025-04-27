@@ -65,7 +65,7 @@ I built a C# .NET WinForms desktop app that performs **CRUD** operations on four
 
 1. **Clone Repository**  
    ```bash
-   git clone https://github.com/yourusername/AirBnDBProject.git
+   git clone https://github.com/SergioFernizaMarquez/AirBnDB.git
 
 2. **Database Setup**
 - Create a database named DevelopmentAirBnDB.
